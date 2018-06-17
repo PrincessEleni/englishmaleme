@@ -1,0 +1,33 @@
+﻿{
+  "en": {
+    "title": "Visit Us!",
+    "paragraph": "Visitors are always welcome to our school. If there’s anything you’d like to know about our programs and curriculum, please get in touch.",
+    "address": "Maleme 730 14, Chania, Greece",
+    "email": "emasfiridakis@yahoo.gr",
+    "phone": "+30 6978174062",
+    "skype": "Skype: emasfiridakis@yahoo.gr",
+    "opening": "OPENING HOURS",
+    "hours1": "Monday - Friday: 3pm - 10pm",
+    "hours2": "Saturday: 10am-2pm",
+    "hours3": "Sunday: Closed",
+    "info":  "Maleme 730 14, Chania, Crete, Greece  |  emasfiridakis@yahoo.gr  |  (+30) 28210 62195  |  (+30) 697 8174062",
+    "footer": "©2018 BY ENGLISH SCHOOL MALEME"
+ },
+
+  "gr": {
+    "title": "Επισκεφθείτε μας!",
+    "paragraph": "Οι επισκέπτες είναι πάντα ευπρόσδεκτοι στο σχολείο μας. Αν υπάρχει οτιδήποτε που θα θέλατε να μάθετε για τα προγράμματα και τις τάξεις μας, παρακαλούμε ελάτε σε επικοινωνία μαζί μας.",
+    "address": "Μάλεμε 730 14, Χανιά, Ελλάδα",
+    "email": "emasfiridakis@yahoo.gr",
+    "phone": "+30 6978174062",
+    "skype": "Skype: emasfiridakis@yahoo.gr",
+    "opening": "ΩΡΕΣ ΛΕΙΤΟΥΡΓΙΑΣ",
+    "hours1": "Δευτέρα - Παρασκευή: 3μμ - 10μμ",
+    "hours2": "Σάββατο: 10πμ-2μμ",
+    "hours3": "Κυριακή: Κλειστά",
+    "info":  "Μάλεμε 730 14, Χανιά, Κρήτη, Ελλάδα  |  emasfiridakis@yahoo.gr  |  (+30) 28210 62195  |  (+30) 697 8174062",
+    "footer": "©2018 ΑΠΟ ΤΟ ΚΕΝΤΡΟ ΞΕΝΩΝ ΓΛΩΣΣΩΝ ΜΑΛΕΜΕ"
+  }
+
+}
+

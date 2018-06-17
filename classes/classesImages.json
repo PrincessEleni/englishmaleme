@@ -1,0 +1,17 @@
+{
+  "classImageJA": "images/classJA.jpg",
+  "classImageJB": "images/classJB.jpg",
+  "classImageA": "images/classA.jpg",
+  "classImageB": "images/classB.jpg",
+  "classImageC": "images/classC.jpg",
+  "classImageD": "images/classD.jpg",
+  "classImageE": "images/classE.jpg",
+  "classImageLower": "images/classLower.png",
+  "classImageAdvance": "images/classAdvance.jpg",
+  "classImageProficiency": "images/classProficiency.jpg",
+  "classImageGre": "images/classGre.jpg",
+  "classImageToefl": "images/classToefl.jpg",
+  "classImageIelts": "images/classIelts.jpg",
+  "classImageOnline": "images/classOnline.jpg",
+  "classImagePrivate": "images/classPrivate.jpg"
+}

@@ -1,0 +1,742 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>English Maleme Activities</title>
+    <script src="../jquery.min.js" type="text/javascript"></script>
+    <script src="../scrollToTop.js" type="text/javascript"></script> 
+    <script src="showImageCollection.js" type="text/javascript"></script>
+    <script src="setImages.js" type="text/javascript"></script>
+    <script src="setStrings.js" type="text/javascript"></script>
+    <script src="../smallScreenMenu.js" type="text/javascript"></script>
+    <script src="../translation.js" type="text/javascript"></script>
+    <script src="../includeHtml.js" type="text/javascript"></script>
+</head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="../style.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    body, h1, h2, h3, h4, h5, h6 {
+        font-family: "Lato", sans-serif;
+    }
+
+    .w3-bar, h1, button {
+        font-family: "Montserrat", sans-serif;
+    }
+
+    .fa-institution, .fa-group, fa fa-mortar-board, fa-home {
+        font-size: 200px;
+    }
+</style>
+<body>
+    <button class="translate translate-button blue-background w3-medium button" style="left: 88%;" id="en">English</button>
+    <button class="translate translate-button blue-background w3-medium button" style="left: 93%;" id="gr">Ελληνικά</button>
+
+    <div id="Activities">
+        
+        <div class="w3-row-padding blue-background w3-padding-64 w3-container">
+            <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+            <div class="title-content">
+                <div class="w3-margin">
+                    <h1 id="activitiesTitle" class="big-title green-text lang" key="activitiesTitle"></h1>
+                    <h3 id="activitiesSubtitle" class="lang" key="activitiesSubtitle"></h3>
+                </div>
+            </div>
+            <!--Images-->
+            <div class="w3-row-padding">
+                <div class="w3-third">
+                    <div class="w3-card green-background box-style">
+                        <h5 id="activity1Title" class="blue-text lang" key="activity1Title"></h5>
+                        <p id="activity1Paragraph1" class="blue-text lang" key="activity1Paragraph1"></p>
+                        <p id="activity1Paragraph2" class="blue-text lang" key="activity1Paragraph2"></p>
+                        <button type="button" onclick="myAccFunc('TreasureHunt')" class="w3-button w3-black w3-padding-large w3-large w3-margin-bottom lang" key="activityButton" id="activityButton"></button>
+                    </div>
+                    <div id="activity1" class="w3-card image-box-style"></div>
+                </div>
+                <div class="w3-third">
+                    <div class="w3-card green-background box-style">
+                        <h5 id="activity2Title" class="blue-text lang" key="activity2Title"></h5>
+                        <p id="activity2Paragraph" class="blue-text lang" key="activity2Paragraph"></p>
+                        <button onclick="myAccFunc('EasterEggHunt')" class="w3-button w3-black w3-padding-large w3-large w3-margin-bottom lang" key="activityButton" id="activityButton"></button>
+                    </div>
+                    <div id="activity2" class="w3-card image-box-style"></div>
+                </div>
+                <div class="w3-third">
+                    <div class="w3-card green-background box-style">
+                        <h5 id="activity3Title" class="blue-text lang" key="activity3Title"></h5>
+                        <p id="activity3Paragraph" class="blue-text lang" key="activity3Paragraph"></p>
+                        <button onclick="myAccFunc('Halloween')" class="w3-button w3-black w3-padding-large w3-large w3-margin-bottom lang" key="activityButton" id="activityButton"></button>
+                    </div>
+                    <div id="activity3" class="w3-card image-box-style"></div>
+                </div>
+            </div>
+            <div class="w3-row-padding w3-padding-64">
+                <div class="w3-third">
+                    <div class="w3-card green-background box-style">
+                        <h5 id="activity4Title" class="blue-text lang" key="activity4Title"></h5>
+                        <p id="activity4Paragraph" class="blue-text lang" key="activity4Paragraph"></p>
+                        <button onclick="myAccFunc('Christmas')" class="w3-button w3-black w3-padding-large w3-large w3-margin-bottom lang" key="activityButton" id="activityButton"></button>
+                    </div>
+                    <div id="activity4" class="w3-card image-box-style"></div>
+                </div>
+                <div class="w3-third">
+                    <div class="w3-card green-background box-style">
+                        <h5 id="activity5Title" class="blue-text lang" key="activity5Title"></h5>
+                        <p id="activity5Paragraph" class="blue-text lang" key="activity5Paragraph"></p>
+                        <button onclick="myAccFunc('Tsiknopempti')" class="w3-button w3-black w3-padding-large w3-large w3-margin-bottom lang" key="activityButton" id="activityButton"></button>
+                    </div>
+                    <div id="activity5" class="w3-card image-box-style"></div>
+                </div>
+                <div class="w3-third">
+                    <div class="w3-card green-background box-style">
+                        <h5 id="activity6Title" class="blue-text lang" key="activity6Title"></h5>
+                        <p id="activity6Paragraph" class="blue-text lang" key="activity6Paragraph"></p>
+                        <button onclick="myAccFunc('MovieNights')" class="w3-button w3-black w3-padding-large w3-large w3-margin-bottom lang" key="activityButton" id="activityButton"></button>
+                    </div>
+                    <div id="activity6" class="w3-card image-box-style"></div>
+                </div>
+            </div>
+            <div class="w3-row-padding w3-padding-64">
+                <div class="w3-third">
+                    <div class="w3-card green-background box-style">
+                        <h5 id="activity7Title" class="blue-text lang" key="activity7Title"></h5>
+                        <p id="activity7Paragraph" class="blue-text lang" key="activity7Paragraph"></p>
+                        <button onclick="myAccFunc('Interviews')" class="w3-button w3-black w3-padding-large w3-large w3-margin-bottom lang" key="activityButton" id="activityButton"></button>
+                    </div>
+                    <div id="activity7" class="w3-card image-box-style"></div>
+                </div>
+                <div class="w3-third">
+                    <div class="w3-card green-background box-style">
+                        <h5 id="activity8Title" class="blue-text lang" key="activity8Title"></h5>
+                        <p id="activity8Paragraph" class="blue-text lang" key="activity8Paragraph"></p>
+                        <button onclick="myAccFunc('StarCompetition')" class="w3-button w3-black w3-padding-large w3-large w3-margin-bottom lang" key="activityButton" id="activityButton"></button>
+                    </div>
+                    <div id="activity8" class="w3-card image-box-style"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <div id="PhotoCollection" class="green-background">
+        <!-- Treasure Hunt -->
+        <div id="TreasureHunt">
+            <div class="w3-hide w3-show paragraph-style">
+            <h2 id="activityHidden1Title" class="title lang" key="activityHidden1Title"></h2>
+            <p id="activityHidden1Paragraph1" class="blue-text lang" key="activityHidden1Paragraph1"></p>
+            <p id="activityHidden1Paragraph2" class="blue-text lang" key="activityHidden1Paragraph2"></p>
+            <p id="activityHidden1Paragraph3" class="blue-text lang" key="activityHidden1Paragraph3"></p>
+                </div>
+            <!-- PHOTO COLLECTION -->
+            <div class="container">
+                <div class="mySlides">
+                    <div class="numbertext">1 / 6</div>
+                    <div id="treasureHunt1"></div>
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">2 / 6</div>
+                    <div id="treasureHunt2"></div>
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">3 / 6</div>
+                    <div id="treasureHunt3"></div>
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">4 / 6</div>
+                    <div id="treasureHunt4"></div>
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">5 / 6</div>
+                    <div id="treasureHunt5"></div>
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">6 / 6</div>
+                    <div id="treasureHunt6"></div>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+
+                <div class="caption-container">
+                    <p id="caption">Treasure Hunt 1</p>
+                </div>
+
+                <div class="row">
+                    <div class="column" id="treasureHunt1thumnbail"></div>
+                    <div class="column" id="treasureHunt2thumnbail"></div>
+                    <div class="column" id="treasureHunt3thumnbail"></div>
+                    <div class="column" id="treasureHunt4thumnbail"></div>
+                    <div class="column" id="treasureHunt5thumnbail"></div>
+                    <div class="column" id="treasureHunt6thumnbail"></div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Easter Egg Hunt -->
+        <div id="EasterEggHunt">
+            <div class="w3-hide w3-show paragraph-style">
+                <h3 id="activityHidden2Title" class="title lang" key="activityHidden2Title"></h3>
+                <p id="activityHidden2Paragraph1" class="blue-text lang" key="activityHidden2Paragraph1"></p>
+                <p id="activityHidden2Paragraph2" class="blue-text lang" key="activityHidden2Paragraph2"></p>
+            </div>
+            <!-- 2017 -->
+            <div class="container blue-background" style="padding-bottom: 30px;">
+                <div class="paragraph-style">
+                    <h2 id="activityHidden2title1" class="title lang" key="activityHidden2title1"></h2>
+                    <p id="activityHidden2title1paragraph1" class="lang" key="activityHidden2title1paragraph1"></p>
+                </div>
+                <div class="EESlides2017">
+                    <div class="numbertext">1 / 14</div>
+                    <div id="easterEggHunt1_2017"></div>
+                </div>
+
+                <div class="EESlides2017">
+                    <div class="numbertext">2 / 14</div>
+                    <div id="easterEggHunt2_2017"></div>
+                </div>
+
+                <div class="EESlides2017">
+                    <div class="numbertext">3 / 14</div>
+                    <div id="easterEggHunt3_2017"></div>
+                </div>
+
+                <div class="EESlides2017">
+                    <div class="numbertext">4 / 14</div>
+                    <div id="easterEggHunt4_2017"></div>
+                </div>
+                <div class="EESlides2017">
+                    <div class="numbertext">5 / 14</div>
+                    <div id="easterEggHunt5_2017"></div>
+                </div>
+                <div class="EESlides2017">
+                    <div class="numbertext">6 / 14</div>
+                    <div id="easterEggHunt6_2017"></div>
+                </div>
+                <div class="EESlides2017">
+                    <div class="numbertext">7 / 14</div>
+                    <div id="easterEggHunt7_2017"></div>
+                </div>
+                <div class="EESlides2017">
+                    <div class="numbertext">8 / 14</div>
+                    <div id="easterEggHunt8_2017"></div>
+                </div>
+                <div class="EESlides2017">
+                    <div class="numbertext">9 / 14</div>
+                    <div id="easterEggHunt9_2017"></div>
+                </div>
+                <div class="EESlides2017">
+                    <div class="numbertext">10 / 14</div>
+                    <div id="easterEggHunt10_2017"></div>
+                </div>
+                <div class="EESlides2017">
+                    <div class="numbertext">11 / 14</div>
+                    <div id="easterEggHunt11_2017"></div>
+                </div>
+                <div class="EESlides2017">
+                    <div class="numbertext">12 / 14</div>
+                    <div id="easterEggHunt12_2017"></div>
+                </div>
+                <div class="EESlides2017">
+                    <div class="numbertext">13 / 14</div>
+                    <div id="easterEggHunt13_2017"></div>
+                </div>
+                <div class="EESlides2017">
+                    <div class="numbertext">14 / 14</div>
+                    <div id="easterEggHunt14_2017"></div>
+                </div>
+                <a class="prev" onclick="plusEESlides2017(-1)">❮</a>
+                <a class="next" onclick="plusEESlides2017(1)">❯</a>
+
+                <div class="caption-container">
+                    <p id="caption">Easter Egg Hunt 1 on 2017</p>
+                </div>
+
+                <div class="row">
+                    <div class="column" id="easterEggHunt1thumnbail_2017"></div>
+                    <div class="column" id="easterEggHunt2thumnbail_2017"></div>
+                    <div class="column" id="easterEggHunt3thumnbail_2017"></div>
+                    <div class="column" id="easterEggHunt4thumnbail_2017"></div>
+                    <div class="column" id="easterEggHunt5thumnbail_2017"></div>
+                    <div class="column" id="easterEggHunt6thumnbail_2017"></div>
+                    <div class="column" id="easterEggHunt7thumnbail_2017"></div>
+                    <div class="column" id="easterEggHunt8thumnbail_2017"></div>
+                    <div class="column" id="easterEggHunt9thumnbail_2017"></div>
+                    <div class="column" id="easterEggHunt10thumnbail_2017"></div>
+                    <div class="column" id="easterEggHunt11thumnbail_2017"></div>
+                    <div class="column" id="easterEggHunt12thumnbail_2017"></div>
+                    <div class="column" id="easterEggHunt13thumnbail_2017"></div>
+                    <div class="column" id="easterEggHunt14thumnbail_2017"></div>
+                </div>
+            </div>
+            <!-- 2012 -->
+            <div class="container green-background" style="padding-bottom: 30px;">
+                <div class="paragraph-style">
+                    <h3 id="activityHidden2title2" class="title lang" key="activityHidden2title2"></h3>
+                    <p id="activityHidden2title2paragraph1" class="lang" key="activityHidden2title2paragraph1"></p>
+                </div>
+                <div class="EESlides">
+                    <div class="numbertext">1 / 8</div>
+                    <div id="easterEggHunt1"></div>
+                </div>
+
+                <div class="EESlides">
+                    <div class="numbertext">2 / 8</div>
+                    <div id="easterEggHunt2"></div>
+                </div>
+
+                <div class="EESlides">
+                    <div class="numbertext">3 / 8</div>
+                    <div id="easterEggHunt3"></div>
+                </div>
+
+                <div class="EESlides">
+                    <div class="numbertext">4 / 8</div>
+                    <div id="easterEggHunt4"></div>
+                </div>
+
+                <div class="EESlides">
+                    <div class="numbertext">5 / 8</div>
+                    <div id="easterEggHunt5"></div>
+                </div>
+
+                <div class="EESlides">
+                    <div class="numbertext">6 / 8</div>
+                    <div id="easterEggHunt6"></div>
+                </div>
+                <div class="EESlides">
+                    <div class="numbertext">7 / 8</div>
+                    <div id="easterEggHunt7"></div>
+                </div>
+                <div class="EESlides">
+                    <div class="numbertext">8 / 8</div>
+                    <div id="easterEggHunt8"></div>
+                </div>
+                <a class="prev" onclick="plusEESlides(-1)">❮</a>
+                <a class="next" onclick="plusEESlides(1)">❯</a>
+
+                <div class="caption-container">
+                    <p id="caption">Easter Egg Hunt 1</p>
+                </div>
+
+                <div class="row">
+                    <div class="column" id="easterEggHunt1thumnbail"></div>
+                    <div class="column" id="easterEggHunt2thumnbail"></div>
+                    <div class="column" id="easterEggHunt3thumnbail"></div>
+                    <div class="column" id="easterEggHunt4thumnbail"></div>
+                    <div class="column" id="easterEggHunt5thumnbail"></div>
+                    <div class="column" id="easterEggHunt6thumnbail"></div>
+                    <div class="column" id="easterEggHunt7thumnbail"></div>
+                    <div class="column" id="easterEggHunt8thumnbail"></div>
+                </div>
+            </div>
+        </div>
+
+            <div id="Halloween">
+                <div class="w3-hide w3-show paragraph-style">
+                    <h2 id="activityHidden3Title" class="title lang" key="activityHidden3Title"></h2>
+                    <p id="activityHidden3Paragraph1" class="blue-text lang" key="activityHidden3Paragraph1"></p>
+                    <p id="activityHidden3Paragraph2" class="blue-text lang" key="activityHidden3Paragraph2"></p>
+                    <p id="activityHidden3Paragraph3" class="blue-text lang" key="activityHidden3Paragraph3"></p>
+                </div>
+                <!-- PHOTO COLLECTION -->
+                <div class="container">
+                    <div class="halloweenSlides">
+                        <div class="numbertext">1 / 7</div>
+                        <div id="halloween1"></div>
+                    </div>
+
+                    <div class="halloweenSlides">
+                        <div class="numbertext">2 / 7</div>
+                        <div id="halloween2"></div>
+                    </div>
+
+                    <div class="halloweenSlides">
+                        <div class="numbertext">3 / 7</div>
+                        <div id="halloween3"></div>
+                    </div>
+
+                    <div class="halloweenSlides">
+                        <div class="numbertext">4 / 7</div>
+                        <div id="halloween4"></div>
+                    </div>
+
+                    <div class="halloweenSlides">
+                        <div class="numbertext">5 / 7</div>
+                        <div id="halloween5"></div>
+                    </div>
+
+                    <div class="halloweenSlides">
+                        <div class="numbertext">6 / 7</div>
+                        <div id="halloween6"></div>
+                    </div>
+                    <div class="halloweenSlides">
+                        <div class="numbertext">7 / 7</div>
+                        <div id="halloween7"></div>
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+
+                    <div class="caption-container">
+                        <p id="caption">Halloween 1</p>
+                    </div>
+
+                    <div class="row">
+                        <div class="column" id="halloween1thumnbail"></div>
+                        <div class="column" id="halloween2thumnbail"></div>
+                        <div class="column" id="halloween3thumnbail"></div>
+                        <div class="column" id="halloween4thumnbail"></div>
+                        <div class="column" id="halloween5thumnbail"></div>
+                        <div class="column" id="halloween6thumnbail"></div>
+                        <div class="column" id="halloween7thumnbail"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="Christmas">
+                <div class="w3-hide w3-show paragraph-style">
+                    <h2 id="activityHidden4Title" class="title lang" key="activityHidden4Title"></h2>
+                    <p id="activityHidden4Paragraph1" class="blue-text lang" key="activityHidden4Paragraph1"></p>
+                    <p id="activityHidden4Paragraph2" class="blue-text lang" key="activityHidden4Paragraph2"></p>
+                    <p id="activityHidden4Paragraph3" class="blue-text lang" key="activityHidden4Paragraph3"></p>
+                    <p id="activityHidden4Paragraph4" class="blue-text lang" key="activityHidden4Paragraph4"></p>
+                </div>
+                <div class="container">
+                    <div class="christmasSlides">
+                        <div class="numbertext">1 / 4</div>
+                        <div id="christmas1"></div>
+                    </div>
+
+                    <div class="christmasSlides">
+                        <div class="numbertext">2 / 4</div>
+                        <div id="christmas2"></div>
+                    </div>
+
+                    <div class="christmasSlides">
+                        <div class="numbertext">3 / 4</div>
+                        <div id="christmas3"></div>
+                    </div>
+
+                    <div class="christmasSlides">
+                        <div class="numbertext">4 / 4</div>
+                        <div id="christmas4"></div>
+                    </div>
+
+                    <a class="prev" onclick="plusChristmasSlides(-1)">❮</a>
+                    <a class="next" onclick="plusChristmasSlides(1)">❯</a>
+
+                    <div class="caption-container">
+                        <p id="caption">Christmas 1</p>
+                    </div>
+
+                    <div class="row">
+                        <div class="column" id="christmas1thumnbail"></div>
+                        <div class="column" id="christmas2thumnbail"></div>
+                        <div class="column" id="christmas3thumnbail"></div>
+                        <div class="column" id="christmas4thumnbail"></div>
+                        <div class="column" id="christmas5thumnbail"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="Tsiknopempti">
+                <div class="w3-hide w3-show paragraph-style">
+                    <h2 id="activityHidden5Title" class="title lang" key="activityHidden5Title"></h2>
+                    <p id="activityHidden5Paragraph1" class="blue-text lang" key="activityHidden5Paragraph1"></p>
+                    <p id="activityHidden5Paragraph2" class="blue-text lang" key="activityHidden5Paragraph2"></p>
+                </div>
+                <!-- PHOTO COLLECTION -->
+                <div class="container">
+                    <div class="tsiknopemptiSlides">
+                        <div class="numbertext">1 / 8</div>
+                        <div id="tsiknopempti1"></div>
+                    </div>
+
+                    <div class="tsiknopemptiSlides">
+                        <div class="numbertext">2 / 8</div>
+                        <div id="tsiknopempti2"></div>
+                    </div>
+
+                    <div class="tsiknopemptiSlides">
+                        <div class="numbertext">3 / 8</div>
+                        <div id="tsiknopempti3"></div>
+                    </div>
+
+                    <div class="tsiknopemptiSlides">
+                        <div class="numbertext">4 / 8</div>
+                        <div id="tsiknopempti4"></div>
+                    </div>
+
+                    <div class="tsiknopemptiSlides">
+                        <div class="numbertext">5 / 8</div>
+                        <div id="tsiknopempti5"></div>
+                    </div>
+
+                    <div class="tsiknopemptiSlides">
+                        <div class="numbertext">6 / 8</div>
+                        <div id="tsiknopempti6"></div>
+                    </div>
+                    <div class="tsiknopemptiSlides">
+                        <div class="numbertext">7 / 8</div>
+                        <div id="tsiknopempti7"></div>
+                    </div>
+                    <div class="tsiknopemptiSlides">
+                        <div class="numbertext">7 / 8</div>
+                        <div id="tsiknopempti8"></div>
+                    </div>
+
+                    <a class="prev" onclick="plusTsiknopemptiSlides(-1)">❮</a>
+                    <a class="next" onclick="plusTsiknopemptiSlides(1)">❯</a>
+
+                    <div class="caption-container">
+                        <p id="caption">Tsiknopempti 1</p>
+                    </div>
+
+                    <div class="row">
+                        <div class="column" id="tsiknopempti1thumnbail"></div>
+                        <div class="column" id="tsiknopempti2thumnbail"></div>
+                        <div class="column" id="tsiknopempti3thumnbail"></div>
+                        <div class="column" id="tsiknopempti4thumnbail"></div>
+                        <div class="column" id="tsiknopempti5thumnbail"></div>
+                        <div class="column" id="tsiknopempti6thumnbail"></div>
+                        <div class="column" id="tsiknopempti7thumnbail"></div>
+                        <div class="column" id="tsiknopempti8thumnbail"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="MovieNights">
+                <div class="w3-hide w3-show paragraph-style">
+                    <h2 id="activityHidden6Title" class="title lang" key="activityHidden6Title"></h2>
+                    <p id="activityHidden6Paragraph1" class="blue-text lang" key="activityHidden6Paragraph1"></p>
+                    <p id="activityHidden6Paragraph2" class="blue-text lang" key="activityHidden6Paragraph2"></p>
+                </div>
+                <div class="container">
+                    <div class="moviesSlides">
+                        <div class="numbertext">1 / 8</div>
+                        <div id="movie1"></div>
+                    </div>
+
+                    <div class="moviesSlides">
+                        <div class="numbertext">2 / 8</div>
+                        <div id="movie2"></div>
+                    </div>
+
+                    <div class="moviesSlides">
+                        <div class="numbertext">3 / 8</div>
+                        <div id="movie3"></div>
+                    </div>
+
+                    <div class="moviesSlides">
+                        <div class="numbertext">4 / 8</div>
+                        <div id="movie4"></div>
+                    </div>
+                    <div class="moviesSlides">
+                        <div class="numbertext">5 / 8</div>
+                        <div id="movie5"></div>
+                    </div>
+                    <div class="moviesSlides">
+                        <div class="numbertext">6 / 8</div>
+                        <div id="movie6"></div>
+                    </div>
+                    <div class="moviesSlides">
+                        <div class="numbertext">7 / 8</div>
+                        <div id="movie7"></div>
+                    </div>
+                    <div class="moviesSlides">
+                        <div class="numbertext">8 / 8</div>
+                        <div id="movie8"></div>
+                    </div>
+
+                    <a class="prev" onclick="plusMoviesSlides(-1)">❮</a>
+                    <a class="next" onclick="plusMoviesSlides(1)">❯</a>
+
+                    <div class="caption-container">
+                        <p id="caption">Movies 1</p>
+                    </div>
+
+                    <div class="row">
+                        <div class="column" id="movie1thumnbail"></div>
+                        <div class="column" id="movie2thumnbail"></div>
+                        <div class="column" id="movie3thumnbail"></div>
+                        <div class="column" id="movie4thumnbail"></div>
+                        <div class="column" id="movie5thumnbail"></div>
+                        <div class="column" id="movie6thumnbail"></div>
+                        <div class="column" id="movie7thumnbail"></div>
+                        <div class="column" id="movie8thumnbail"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="Interviews">
+                <div class="w3-hide w3-show paragraph-style">
+                    <h2 id="activityHidden7Title" class="title lang" key="activityHidden7Title"></h2>
+                    <p id="activityHidden7Paragraph1" class="blue-text lang" key="activityHidden7Paragraph1"></p>
+                    <p id="activityHidden7Paragraph2" class="blue-text lang" key="activityHidden7Paragraph2"></p>
+                </div>
+                <div class="container">
+                    <div class="interviewSlides">
+                        <div class="numbertext">1 / 5</div>
+                        <div id="interview1"></div>
+                    </div>
+
+                    <div class="interviewSlides">
+                        <div class="numbertext">2 / 5</div>
+                        <div id="interview2"></div>
+                    </div>
+
+                    <div class="interviewSlides">
+                        <div class="numbertext">3 / 5</div>
+                        <div id="interview3"></div>
+                    </div>
+
+                    <div class="interviewSlides">
+                        <div class="numbertext">4 / 5</div>
+                        <div id="interview4"></div>
+                    </div>
+                    <div class="interviewSlides">
+                        <div class="numbertext">5 / 5</div>
+                        <div id="interview5"></div>
+                    </div>
+
+                    <a class="prev" onclick="plusInterviewSlides(-1)">❮</a>
+                    <a class="next" onclick="plusInterviewSlides(1)">❯</a>
+
+                    <div class="caption-container">
+                        <p id="caption">Interview 1</p>
+                    </div>
+
+                    <div class="row">
+                        <div class="column" id="interview1thumnbail"></div>
+                        <div class="column" id="interview2thumnbail"></div>
+                        <div class="column" id="interview3thumnbail"></div>
+                        <div class="column" id="interview4thumnbail"></div>
+                        <div class="column" id="interview5thumnbail"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="StarCompetition">
+                <div class="w3-hide w3-show paragraph-style">
+                    <h2 id="activityHidden8Title" class="title lang" key="activityHidden8Title"></h2>
+                    <p id="activityHidden8Paragraph1" class="blue-text lang" key="activityHidden8Paragraph1"></p>
+                    <p id="activityHidden8Paragraph2" class="blue-text lang" key="activityHidden8Paragraph2"></p>
+                    <p id="activityHidden8Paragraph3" class="blue-text lang" key="activityHidden8Paragraph3"></p>
+                </div>
+                <div class="container">
+                    <div class="starsSlides">
+                        <div class="numbertext">1 / 3</div>
+                        <div id="star1"></div>
+                    </div>
+
+                    <div class="starsSlides">
+                        <div class="numbertext">2 / 3</div>
+                        <div id="star2"></div>
+                    </div>
+
+                    <div class="starsSlides">
+                        <div class="numbertext">3 / 3</div>
+                        <div id="star3"></div>
+                    </div>
+
+                    <a class="prev" onclick="plusStarsSlides(-1)">❮</a>
+                    <a class="next" onclick="plusStarsSlides(1)">❯</a>
+
+                    <div class="caption-container">
+                        <p id="caption">Star 1</p>
+                    </div>
+
+                    <div class="row">
+                        <div class="column" id="star1thumnbail"></div>
+                        <div class="column" id="star2thumnbail"></div>
+                        <div class="column" id="star3thumnbail"></div>
+                    </div>
+                </div>
+            </div>
+
+</div>
+
+        
+    
+
+
+
+
+    <div id="quote" class="w3-container w3-center w3-padding-64 green-background">
+        <h1 class="w3-margin w3-xlarge lang" id="quoteTitle" key="homePart3Quote1"></h1>
+    </div>
+
+    <div w3-include-html="../footer.html"></div>
+    <div w3-include-html="../navigationMenu.html"></div>
+    <script>
+        includeHTML();
+        window.localStorage.setItem("homePath", "../home.html");
+        window.localStorage.setItem("aboutPath", "../about.html");
+        window.localStorage.setItem("activitiesPath", "activities.html");
+        window.localStorage.setItem("classesPath", "../classes/classes.html");
+        window.localStorage.setItem("learningPath", "#");
+        window.localStorage.setItem("contactPath", "../contact/contact.php");
+    </script>
+
+    <script type="text/javascript">
+        $('#PhotoCollection').hide();
+        
+        function myAccFunc(id)
+        {
+            //Show and hide div with photos
+            $('#PhotoCollection').show();
+            $(document.getElementById(id)).show();
+            $(document.getElementById(id)).siblings().hide();
+            // Scroll down to the photos
+            $('html,body').animate({ scrollTop: $(document.getElementById(id)).offset().top - 50 }, 'slow');
+            
+        }
+
+
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        var slideIndexEE = 1;
+        showEESlides(slideIndexEE);
+        var slideIndexEE2017 = 1;
+        showEESlides2017(slideIndexEE2017);
+        var slideIndexHalloween = 1;
+        showHalloweenSlides(slideIndexHalloween);
+        var slideIndexChristmas = 1;
+        showChristmasSlides(slideIndexChristmas);
+        var slideIndexTsiknopempti = 1;
+        showTsiknopemptiSlides(slideIndexTsiknopempti);
+        var slideIndexMovies = 1;
+        showMoviesSlides(slideIndexMovies);
+        var slideIndexInterview = 1;
+        showInterviewSlides(slideIndexInterview);
+        var slideIndexStars = 1;
+        showStarsSlides(slideIndexStars);
+
+
+        $(document).ready(function ()
+        {
+            // If we are jumping from another page to a subcategory to the Activities
+            if (window.location.hash)
+            {
+                $('#PhotoCollection').show();
+                $(document.getElementById(window.location.hash.substr(1))).show();
+                $(document.getElementById(window.location.hash.substr(1))).siblings().hide();
+            }
+        });
+
+    </script>
+
+    
+
+</body>
+</html>

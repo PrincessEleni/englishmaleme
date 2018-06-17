@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>About English Maleme</title>
+    <script src="../jquery.min.js" type="text/javascript"></script>
+    <script src="../smallScreenMenu.js" type="text/javascript"></script>
+    <script src="../translation.js" type="text/javascript"></script>
+    <script src="setStrings.js" type="text/javascript"></script>
+    <script src="../jumpToSubPages.js" type="text/javascript"></script>
+    <script src="../includeHtml.js" type="text/javascript"></script>
+</head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="../style.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    body, h1, h2, h3, h4, h5, h6 {
+        font-family: "Lato", sans-serif;
+    }
+
+    .w3-bar, h1, button {
+        font-family: "Montserrat", sans-serif;
+    }
+
+    .fa-institution, .fa-group, .fa-mortar-board {
+        font-size: 200px;
+    }
+
+    , fa-home {
+        font-size: 200px;
+    }
+</style>
+<body>
+    <button class="translate translate-button blue-background w3-medium button" style="left: 88%;" id="en">English</button>
+    <button class="translate translate-button blue-background w3-medium button" style="left: 93%;" id="gr">Ελληνικά</button>
+
+    <div id="About">
+        <!-- First Grid -->
+        <div class="w3-row-padding green-background w3-padding-64 w3-container">
+            <div class="w3-content blue-text">
+                <div class="w3-twothird" style="margin-top: 30px">
+                    <h1><i id="aboutTitle" class="title lang" key="aboutTitle"></i></h1>
+                    <h5 id="aboutSubtitle" class="w3-padding-32 lang" key="aboutSubtitle"></h5>
+                    <p id="aboutParagraph1" class="lang" key="aboutParagraph1"></p>
+                </div>
+
+                <div class="w3-third w3-center">
+                    <i class="fa fa-institution w3-padding-64" style="color: #0d1526!important; font-size:200px"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-row-padding blue-background w3-padding-64 w3-container">
+            <div class="w3-content">
+                <div class="w3-twothird">
+                    <h1><i id="aboutTitle2" class="title lang" key="aboutTitle2"></i></h1>
+                    <h5 id="aboutSubtitle2" class="w3-padding-32 lang" key="aboutSubtitle2"></h5>
+                    <p id="aboutParagraph2" class="lang" key="aboutParagraph2"></p>
+                </div>
+
+                <div class="w3-third w3-center">
+                    <i class="fa fa-mortar-board w3-padding-64" style="color: #04c879!important; font-size:200px"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-row-padding w3-padding-64 w3-container green-background">
+            <div class="w3-content blue-text">
+                <div class="w3-twothird">
+                    <h1><i id="aboutTitle3" class="title lang" key="aboutTitle3"></i></h1>
+                    <h5 id="aboutSubtitle3" class="w3-padding-32 lang" key="aboutSubtitle3"></h5>
+                    <p id="aboutParagraph3" class="lang" key="aboutParagraph3"></p>
+                </div>
+
+                <div style="text-align:center;">
+                    <iframe width="720" height="405" src="https://www.youtube.com/embed/KJw2xX6LsPI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+
+        </div>
+
+
+    <div w3-include-html="../footer.html"></div>
+    <div w3-include-html="../navigationMenu.html"></div>
+
+    <script>
+        includeHTML();
+        window.localStorage.setItem("homePath", "../home.html");
+        window.localStorage.setItem("aboutPath", "about.html");
+        window.localStorage.setItem("activitiesPath", "../activities/activities.html");
+        window.localStorage.setItem("classesPath", "../classes/classes.html");
+        window.localStorage.setItem("learningPath", "#");
+        window.localStorage.setItem("contactPath", "../contact/contact.php");
+    </script>
+
+    
+</body>
+</html>

@@ -1,0 +1,269 @@
+﻿.bgimg {
+    background-position: center;
+    background-size: cover;
+    background-image: url(/home/images/background.jpg);
+    min-height: 75%;
+    opacity: 1;
+    text-align: center!important;
+}
+
+.green-background {
+    color: #000!important;
+    background-color: #04c879!important;
+}
+
+.box-style {
+    text-align: center;
+    font-size: 17px;
+    width: 90%;
+    padding: 20px 10px 0px 30px;
+}
+
+.translate-button {
+    z-index: 50;
+    //position: relative;
+    position:absolute;
+    //transition: .5s ease;
+    top: 1.5%;
+    
+}
+.translate-button:hover {
+    color: #04c879!important;
+}
+
+.paragraph-style {
+    font-size: 17px;
+    width: 90%;
+    padding: 20px 10px 0px 30px;
+}
+
+.image-box-style {
+    width: 90%;
+}
+
+.blue-background {
+    color: #fff!important;
+    background-color: #0d1526!important;
+}
+
+.green, .hover-green:hover {
+    color: #000!important;
+    background-color: #28b595!important;
+}
+
+.w3-white, .w3-hover-white:hover {
+    color: #000!important;
+    background-color: #28b595!important;
+}
+
+.button {
+    white-space: normal;
+    user-select: none;
+        border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.w3-dropdown-content {
+    background-color: #28b595!important;
+}
+
+.dropdown-button:hover{color:#000!important;background-color:#1f9376!important}
+.dropdown-button {text-decoration: none;}
+.dropdown-border {
+    border: 1px solid #1f9376!important;
+}
+
+.dropdown-hover:hover > .dropdown-button:first-child,.dropdown-click:hover > .dropdown-button:first-child{background-color:#1f9376;color:#1f9376}
+
+.title-content {
+    text-align: center;
+}
+
+.big-title  {
+    font-weight: bold;
+    font-family: "Lato", sans-serif;
+    font-style: italic;
+    font-size: 300%;
+}
+.green-text  {
+    color: #04c879;
+}
+
+.title {
+    font-family: "Lato", sans-serif;
+    font-style: italic;
+    font-size: 200%;
+}
+
+.blue-text  {
+    color: #0d1526;
+}
+
+/*
+    *
+    * Photo Collection
+    *
+*/
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 8px 12px;
+  position: absolute;
+  top: auto;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+/*
+    *
+    * Scroll stop the stop button
+    *
+*/
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #28b595;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+/*
+    Contact Form
+*/
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #0d1526;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.containerContact {
+    border-radius: 5px;
+    background-color: #04c879;
+    padding: 20px;
+}

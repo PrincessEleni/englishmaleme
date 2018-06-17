@@ -1,0 +1,191 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>English Maleme Classes</title>
+    <script type="text/javascript" src="../jquery.min.js"></script>
+    <script src="setStrings.js" type="text/javascript"></script>
+    <script src="../translation.js" type="text/javascript"></script>
+    <script src="../smallScreenMenu.js" type="text/javascript"></script>
+    <script src="../jumpToSubPages.js" type="text/javascript"></script>
+    <script src="../includeHtml.js" type="text/javascript"></script>
+    <script src="setImages.js" type="text/javascript"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+</head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="../style.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    body, h1, h2, h3, h4, h5, h6 {
+        font-family: "Lato", sans-serif;
+    }
+
+    .w3-bar, h1, button {
+        font-family: "Montserrat", sans-serif;
+    }
+
+    .fa-institution, .fa-group, fa fa-mortar-board, fa-home {
+        font-size: 200px;
+    }
+</style>
+<body>
+    <button class="translate translate-button blue-background w3-medium button" style="left: 88%;" id="en">English</button>
+    <button class="translate translate-button blue-background w3-medium button" style="left: 93%;" id="gr">Ελληνικά</button>
+
+    <div id="Classes">
+
+        <div class="w3-row-padding blue-background w3-padding-64 w3-container">
+            <div class="w3-content">
+                <div class="w3-twothird w3-margin">
+                    <h1><i id="classTitle" class="lang" key="classTitle"></i></h1>
+                </div>
+            </div>
+            <!--Images-->
+            <div class="w3-row-padding blue-text">
+                <div class="w3-third">
+                    <div id="classImageJA" class="w3-card"></div>
+                    <div class="w3-container w3-card green-background" style="text-align: center;">
+                        <h5 id="classJuniorA" class="lang" key="classJuniorA"></h5>
+                        <button type="button" class="w3-button w3-black w3-padding-large w3-large w3-margin-bottom lang" key="classButton1" id="classButton1"></button>
+                    </div>
+                </div>
+                <div class="w3-third">
+                    <div id="classImageJB" class="w3-card"></div>
+                    <div class="w3-container w3-card green-background" style="text-align: center;">
+                        <h5 id="classJuniorB" class="lang" key="classJuniorB"></h5>
+                        <button type="button" class="w3-button w3-black w3-padding-large w3-large w3-margin-bottom lang" key="classButton2" id="classButton2"></button>
+                    </div>
+                </div>
+                <div class="w3-third">
+                    <div id="classImageA" class="w3-card"></div>
+                    <div class="w3-container w3-card green-background" style="text-align: center;">
+                        <h5 id="classA" class="lang" key="classA"></h5>
+                        <button type="button" class="w3-button w3-black w3-padding-large w3-large w3-margin-bottom lang" key="classButton3" id="classButton3"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-row-padding w3-padding-64">
+                <div class="w3-third">
+                    <div id="classImageB" class="w3-card"></div>
+                    <div class="w3-container w3-card green-background" style="text-align: center;">
+                        <h5 id="classB" class="lang" key="classB"></h5>
+                        <button type="button" class="w3-button w3-black w3-padding-large w3-large w3-margin-bottom lang" key="classButton4" id="classButton4"></button>
+                    </div>
+                </div>
+                <div class="w3-third">
+                    <div id="classImageC" class="w3-card"></div>
+                    <div class="w3-container w3-card green-background" style="text-align: center;">
+                        <h5 id="classC" class="lang" key="classC"></h5>
+                        <button type="button" class="w3-button w3-black w3-padding-large w3-large w3-margin-bottom lang" key="classButton5" id="classButton5"></button>
+                    </div>
+                </div>
+                <div class="w3-third">
+                    <div id="classImageD" class="w3-card"></div>
+                    <div class="w3-container w3-card green-background" style="text-align: center;">
+                        <h5 id="classD" class="lang" key="classD"></h5>
+                        <button type="button" class="w3-button w3-black w3-padding-large w3-large w3-margin-bottom lang" key="classButton6" id="classButton6"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-row-padding w3-padding-64">
+                <div class="w3-third">
+                    <div id="classImageE" class="w3-card"></div>
+                    <div class="w3-container w3-card green-background" style="text-align: center;">
+                        <h5 id="classE" class="lang" key="classE"></h5>
+                        <button type="button" class="w3-button w3-black w3-padding-large w3-large w3-margin-bottom lang" key="classButton7" id="classButton7"></button>
+                    </div>
+                </div>
+                <div class="w3-third">
+                    <div id="classImageLower" class="w3-card"></div>
+                    <div class="w3-container w3-card green-background" style="text-align: center;">
+                        <h5 id="classLower" class="lang" key="classLower"></h5>
+                        <button type="button" class="w3-button w3-black w3-padding-large w3-large w3-margin-bottom lang" key="classButton8" id="classButton8"></button>
+                    </div>
+                </div>
+                <div class="w3-third">
+                    <div id="classImageAdvance" class="w3-card"></div>
+                    <div class="w3-container w3-card green-background" style="text-align: center;">
+                        <h5 id="classAdvance" class="lang" key="classAdvance"></h5>
+                        <button type="button" class="w3-button w3-black w3-padding-large w3-large w3-margin-bottom lang" key="classButton9" id="classButton9"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-row-padding w3-padding-64">
+                <div class="w3-third">
+                    <div id="classImageProficiency" class="w3-card"></div>
+                    <div class="w3-container w3-card green-background" style="text-align: center;">
+                        <h5 id="classProficiency" class="lang" key="classProficiency"></h5>
+                        <button type="button" class="w3-button w3-black w3-padding-large w3-large w3-margin-bottom lang" key="classButton10" id="classButton10"></button>
+                    </div>
+                </div>
+                <div class="w3-third">
+                    <div id="classImageOnline" class="w3-card"></div>
+                    <div class="w3-container w3-card green-background" style="text-align: center;">
+                        <h5 id="classOnline" class="lang" key="classOnline"></h5>
+                        <button type="button" class="w3-button w3-black w3-padding-large w3-large w3-margin-bottom lang" key="classButton11" id="classButton11"></button>
+                    </div>
+                </div>
+                <div class="w3-third">
+                    <div id="classImagePrivate" class="w3-card"></div>
+                    <div class="w3-container w3-card green-background" style="text-align: center;">
+                        <h5 id="classPrivate" class="lang" key="classPrivate"></h5>
+                        <button type="button" class="w3-button w3-black w3-padding-large w3-large w3-margin-bottom lang" key="classButton12" id="classButton12"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-row-padding w3-padding-64">
+                <div class="w3-third">
+                    <div id="classImageToefl" class="w3-card"></div>
+                    <div class="w3-container w3-card green-background" style="text-align: center;">
+                        <h5 id="classTOEFL" class="lang" key="classTOEFL"></h5>
+                        <button type="button" class="w3-button w3-black w3-padding-large w3-large w3-margin-bottom lang" key="classButton13" id="classButton13"></button>
+                    </div>
+                </div>
+                <div class="w3-third">
+                    <div id="classImageIelts" class="w3-card"></div>
+                    <div class="w3-container w3-card green-background" style="text-align: center;">
+                        <h5 id="classIELTS" class="lang" key="classIELTS"></h5>
+                        <button type="button" class="w3-button w3-black w3-padding-large w3-large w3-margin-bottom lang" key="classButton14" id="classButton14"></button>
+                    </div>
+                </div>
+                <div class="w3-third">
+                    <div id="classImageGre" class="w3-card"></div>
+                    <div class="w3-container w3-card green-background" style="text-align: center;">
+                        <h5 id="classGRE" class="lang" key="classGRE"></h5>
+                        <button type="button" class="w3-button w3-black w3-padding-large w3-large w3-margin-bottom lang" key="classButton15" id="classButton15"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <div w3-include-html="../footer.html"></div>
+    <div w3-include-html="../navigationMenu.html"></div>
+
+    <script>
+        includeHTML();
+        window.localStorage.setItem("homePath", "../home/home.html");
+        window.localStorage.setItem("aboutPath", "../about/about.html");
+        window.localStorage.setItem("activitiesPath", "../activities/activities.html");
+        window.localStorage.setItem("classesPath", "classes.html");
+        window.localStorage.setItem("learningPath", "#");
+        window.localStorage.setItem("contactPath", "../contact/contact.php");
+
+        $.get('../navigationMenu.html', null, function (text)
+        {
+            $(document.getElementById("menu1")).className += " green";
+            //$(document.getElementById("menu1")).classList.add('green');
+        });
+
+    </script>
+
+</body>
+</html>
