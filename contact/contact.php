@@ -73,7 +73,6 @@
     <script src="setStrings.js" type="text/javascript"></script>
     <script src="../smallScreenMenu.js" type="text/javascript"></script>
     <script src="../translation.js" type="text/javascript"></script>
-    <script src="../jumpToSubPages.js" type="text/javascript"></script>
     <script src="../includeHtml.js" type="text/javascript"></script>
 </head>
 
@@ -152,6 +151,8 @@
         
 		<div w3-include-html="../footer.html"></div>
     <div w3-include-html="../navigationMenu.html"></div>
+	
+    <script src="../jumpToSubPages.js" type="text/javascript"></script>
     <script>
         includeHTML();
 		window.localStorage.setItem("homePath", "../home.html");
