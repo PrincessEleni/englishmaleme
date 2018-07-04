@@ -10,7 +10,7 @@
     <!-- Navbar -->
     <div class="w3-top">
         <div class="w3-bar blue-background w3-card w3-left-align w3-large">
-                <a href="../home/home.html" class="w3-bar-item button w3-hide-small w3-padding-large hover-green green lang" style="text-decoration: none" key="menu1" id="menu1">
+                <a href="../home/home.html" class="w3-bar-item button w3-hide-small w3-padding-large hover-green lang" style="text-decoration: none" key="menu1" id="menu1">
                     Home
                     <i class="fa fa-home"></i>
                 </a>
@@ -23,14 +23,14 @@
                         </a>
                     </button>
                     <div class="w3-dropdown-content w3-card-4 w3-bar-block dropdown-border">
-                        <a href="../activities/activities.html#TreasureHunt" class="w3-bar-item dropdown-button">Treasure Hunt</a>
-                        <a href="../activities/activities.html#EasterEggHunt" class="w3-bar-item dropdown-button">Easter Egg</a>
-                        <a href="../activities/activities.html#Halloween" class="w3-bar-item dropdown-button">Halloween</a>
-                        <a href="../activities/activities.html#Christmas" class="w3-bar-item dropdown-button">Christmas Theatricals & Christmas Carols</a>
-                        <a href="../activities/activities.html#Tsiknopempti" class="w3-bar-item dropdown-button">Tsiknopempti</a>
-                        <a href="../activities/activities.html#MovieNights" class="w3-bar-item dropdown-button">Movie Nights</a>
-                        <a href="../activities/activities.html#Interviews" class="w3-bar-item dropdown-button">Interviews</a>
-                        <a href="../activities/activities.html#StarCompetition" class="w3-bar-item dropdown-button">Star Competition</a>
+                        <a href="../activities/activities.html#TreasureHunt" onclick="myAccFunc('TreasureHunt')" class="w3-bar-item dropdown-button">Treasure Hunt</a>
+                        <a href="../activities/activities.html#EasterEggHunt" onclick="myAccFunc('EasterEggHunt')" class="w3-bar-item dropdown-button">Easter Egg</a>
+                        <a href="../activities/activities.html#Halloween" onclick="myAccFunc('Halloween')" class="w3-bar-item dropdown-button">Halloween</a>
+                        <a href="../activities/activities.html#Christmas" onclick="myAccFunc('Christmas')" class="w3-bar-item dropdown-button">Christmas Theatricals & Christmas Carols</a>
+                        <a href="../activities/activities.html#Tsiknopempti" onclick="myAccFunc('Tsiknopempti')" class="w3-bar-item dropdown-button">Tsiknopempti</a>
+                        <a href="../activities/activities.html#MovieNights" onclick="myAccFunc('MovieNights')" class="w3-bar-item dropdown-button">Movie Nights</a>
+                        <a href="../activities/activities.html#Interviews" onclick="myAccFunc('Interviews')" class="w3-bar-item dropdown-button">Interviews</a>
+                        <a href="../activities/activities.html#StarCompetition" onclick="myAccFunc('StarCompetition')" class="w3-bar-item dropdown-button">Star Competition</a>
                     </div>
                 </div>
                 <a href="../classes/classes.html" class="w3-bar-item button w3-hide-small w3-padding-large hover-green lang" key="menu4" id="menu4">
@@ -38,7 +38,7 @@
                 </a>
                 <a href="#" class="w3-bar-item button w3-hide-small w3-padding-large hover-green lang" key="menu5" id="menu5">Online Learning</a>
                 <a href="../contact/contact.php" class="w3-bar-item button w3-hide-small w3-padding-large hover-green lang" key="menu6" id="menu6">Contact</a>
-                
+
 </div>
 
         <!-- Navbar on small screens -->
@@ -56,7 +56,6 @@
 
     <script>
         /*
-        document.getElementById("menu1").className += " green";
         document.getElementById("menu1").innerHTML = window.localStorage.getItem("homePath");
         document.getElementById("menu2").innerHTML = window.localStorage.getItem("aboutPath");
         document.getElementById("menu3").innerHTML = window.localStorage.getItem("activitiesPath");
@@ -64,6 +63,13 @@
         document.getElementById("menu5").innerHTML = window.localStorage.getItem("learningPath");
         document.getElementById("menu6").innerHTML = window.localStorage.getItem("contactPath");
         */
+        //classes
+        
+        window.onload = function ()
+        {
+            document.getElementById("menu1").classList.add(window.localStorage.getItem("homePathClass"));
+            console.log("homePathClass");
+        }
         /*
         window.onload = function ()
         {
@@ -79,8 +85,8 @@
         }
         */
 
-        
-    </script>
 
+    </script>
+    
 </body>
 </html>

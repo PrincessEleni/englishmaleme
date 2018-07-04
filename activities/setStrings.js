@@ -33,7 +33,14 @@ xhttpText.onreadystatechange = function ()
         document.getElementById('activity8Title').innerHTML = myresponseText.activity8Title;
         document.getElementById('activity8Paragraph').innerHTML = myresponseText.activity8Paragraph;
         
-        document.getElementById('activityButton').innerHTML = myresponseText.activityButton;
+        document.getElementById('activityButton1').innerHTML = myresponseText.activityButton1;
+        document.getElementById('activityButton2').innerHTML = myresponseText.activityButton2;
+        document.getElementById('activityButton3').innerHTML = myresponseText.activityButton3;
+        document.getElementById('activityButton4').innerHTML = myresponseText.activityButton4;
+        document.getElementById('activityButton5').innerHTML = myresponseText.activityButton5;
+        document.getElementById('activityButton6').innerHTML = myresponseText.activityButton6;
+        document.getElementById('activityButton7').innerHTML = myresponseText.activityButton7;
+        document.getElementById('activityButton8').innerHTML = myresponseText.activityButton8;
         document.getElementById('quoteTitle').innerHTML = myresponseText.homePart3Quote1;
 
         document.getElementById('activityHidden1Title').innerHTML = myresponseText.activityHidden1Title;

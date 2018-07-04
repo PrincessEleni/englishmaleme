@@ -5,7 +5,7 @@ xhttpText.open("GET", urlText, true);
 var responseText;
 xhttpText.onreadystatechange = function ()
 {
-    if (this.readyState == 4 && this.status == 200)
+     if (this.readyState == 4 && this.status == 200)
     { //we are ok to reseive data
         responseText = JSON.parse(xhttpText.responseText); //to make them objects to use them because they are strings
 

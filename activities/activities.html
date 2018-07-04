@@ -4,7 +4,6 @@
 <head>
     <meta charset="utf-8" />
     <title>English Maleme Activities</title>
-    <script src="../jquery.min.js" type="text/javascript"></script>
     <script src="../scrollToTop.js" type="text/javascript"></script> 
     <script src="showImageCollection.js" type="text/javascript"></script>
     <script src="setImages.js" type="text/javascript"></script>
@@ -22,13 +21,6 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
     body, h1, h2, h3, h4, h5, h6 {
-        font-family: "Lato", sans-serif;
-    }
-
-    .w3-bar, h1, button {
-        font-family: "Montserrat", sans-serif;
-    }
-
     .fa-institution, .fa-group, fa fa-mortar-board, fa-home {
         font-size: 200px;
     }
@@ -62,7 +54,7 @@
                     <div class="w3-card green-background box-style">
                         <h5 id="activity2Title" class="blue-text lang" key="activity2Title"></h5>
                         <p id="activity2Paragraph" class="blue-text lang" key="activity2Paragraph"></p>
-                        <button onclick="myAccFunc('EasterEggHunt')" class="w3-button w3-black w3-padding-large w3-large w3-margin-bottom lang" key="activityButton" id="activityButton"></button>
+                        <button type="button" onclick="myAccFunc('EasterEggHunt')" class="w3-button w3-black w3-padding-large w3-large w3-margin-bottom lang" key="activityButton2" id="activityButton2"></button>
                     </div>
                     <div id="activity2" class="w3-card image-box-style"></div>
                 </div>
@@ -70,7 +62,7 @@
                     <div class="w3-card green-background box-style">
                         <h5 id="activity3Title" class="blue-text lang" key="activity3Title"></h5>
                         <p id="activity3Paragraph" class="blue-text lang" key="activity3Paragraph"></p>
-                        <button onclick="myAccFunc('Halloween')" class="w3-button w3-black w3-padding-large w3-large w3-margin-bottom lang" key="activityButton" id="activityButton"></button>
+                        <button onclick="myAccFunc('Halloween')" class="w3-button w3-black w3-padding-large w3-large w3-margin-bottom lang" key="activityButton3" id="activityButton3"></button>
                     </div>
                     <div id="activity3" class="w3-card image-box-style"></div>
                 </div>
@@ -80,7 +72,7 @@
                     <div class="w3-card green-background box-style">
                         <h5 id="activity4Title" class="blue-text lang" key="activity4Title"></h5>
                         <p id="activity4Paragraph" class="blue-text lang" key="activity4Paragraph"></p>
-                        <button onclick="myAccFunc('Christmas')" class="w3-button w3-black w3-padding-large w3-large w3-margin-bottom lang" key="activityButton" id="activityButton"></button>
+                        <button onclick="myAccFunc('Christmas')" class="w3-button w3-black w3-padding-large w3-large w3-margin-bottom lang" key="activityButton4" id="activityButton4"></button>
                     </div>
                     <div id="activity4" class="w3-card image-box-style"></div>
                 </div>
@@ -88,7 +80,7 @@
                     <div class="w3-card green-background box-style">
                         <h5 id="activity5Title" class="blue-text lang" key="activity5Title"></h5>
                         <p id="activity5Paragraph" class="blue-text lang" key="activity5Paragraph"></p>
-                        <button onclick="myAccFunc('Tsiknopempti')" class="w3-button w3-black w3-padding-large w3-large w3-margin-bottom lang" key="activityButton" id="activityButton"></button>
+                        <button onclick="myAccFunc('Tsiknopempti')" class="w3-button w3-black w3-padding-large w3-large w3-margin-bottom lang" key="activityButton5" id="activityButton5"></button>
                     </div>
                     <div id="activity5" class="w3-card image-box-style"></div>
                 </div>
@@ -96,7 +88,7 @@
                     <div class="w3-card green-background box-style">
                         <h5 id="activity6Title" class="blue-text lang" key="activity6Title"></h5>
                         <p id="activity6Paragraph" class="blue-text lang" key="activity6Paragraph"></p>
-                        <button onclick="myAccFunc('MovieNights')" class="w3-button w3-black w3-padding-large w3-large w3-margin-bottom lang" key="activityButton" id="activityButton"></button>
+                        <button onclick="myAccFunc('MovieNights')" class="w3-button w3-black w3-padding-large w3-large w3-margin-bottom lang" key="activityButton6" id="activityButton6"></button>
                     </div>
                     <div id="activity6" class="w3-card image-box-style"></div>
                 </div>
@@ -106,7 +98,7 @@
                     <div class="w3-card green-background box-style">
                         <h5 id="activity7Title" class="blue-text lang" key="activity7Title"></h5>
                         <p id="activity7Paragraph" class="blue-text lang" key="activity7Paragraph"></p>
-                        <button onclick="myAccFunc('Interviews')" class="w3-button w3-black w3-padding-large w3-large w3-margin-bottom lang" key="activityButton" id="activityButton"></button>
+                        <button onclick="myAccFunc('Interviews')" class="w3-button w3-black w3-padding-large w3-large w3-margin-bottom lang" key="activityButton7" id="activityButton7"></button>
                     </div>
                     <div id="activity7" class="w3-card image-box-style"></div>
                 </div>
@@ -114,7 +106,7 @@
                     <div class="w3-card green-background box-style">
                         <h5 id="activity8Title" class="blue-text lang" key="activity8Title"></h5>
                         <p id="activity8Paragraph" class="blue-text lang" key="activity8Paragraph"></p>
-                        <button onclick="myAccFunc('StarCompetition')" class="w3-button w3-black w3-padding-large w3-large w3-margin-bottom lang" key="activityButton" id="activityButton"></button>
+                        <button onclick="myAccFunc('StarCompetition')" class="w3-button w3-black w3-padding-large w3-large w3-margin-bottom lang" key="activityButton8" id="activityButton8"></button>
                     </div>
                     <div id="activity8" class="w3-card image-box-style"></div>
                 </div>
@@ -689,16 +681,45 @@
     </script>
 
     <script type="text/javascript">
-        $('#PhotoCollection').hide();
-        
+        //Finds y value of given object
+        function findPos(obj)
+        {
+            var curtop = 0;
+            if (obj.offsetParent)
+            {
+                do
+                {
+                    curtop += obj.offsetTop;
+                } while (obj = obj.offsetParent);
+                return [curtop];
+            }
+        }
+        function scrollIntoView(eleID)
+        {
+            var e = document.getElementById(eleID);
+            if (!!e && e.scrollIntoView)
+            {
+                e.scrollIntoView();
+            }
+        }
+        document.getElementById('PhotoCollection').style.display = 'none';
         function myAccFunc(id)
         {
             //Show and hide div with photos
-            $('#PhotoCollection').show();
-            $(document.getElementById(id)).show();
-            $(document.getElementById(id)).siblings().hide();
+            document.getElementById('PhotoCollection').style.display = 'block';
+            document.getElementById(id).style.display = 'block';
+            // Native (alternative) - latest, Edge13+
+            var siblings = Array.from(document.getElementById(id).parentNode.children).filter((child) =>
+                child !== document.getElementById(id));
+            siblings.forEach(function (element)
+            {
+                element.style.display = 'none';
+            });
             // Scroll down to the photos
-            $('html,body').animate({ scrollTop: $(document.getElementById(id)).offset().top - 50 }, 'slow');
+            //document.body.animate({ scrollTop: document.getElementById(id).getBoundingClientRect().top - 50 }, 'slow');
+
+            window.scroll(0, findPos(document.getElementById(id)));
+            //document.getElementById(id).scrollIntoView();
             
         }
 
@@ -722,18 +743,17 @@
         var slideIndexStars = 1;
         showStarsSlides(slideIndexStars);
 
-
-        $(document).ready(function ()
+        document.addEventListener("DOMContentLoaded", function (event)
         {
             // If we are jumping from another page to a subcategory to the Activities
             if (window.location.hash)
             {
-                $('#PhotoCollection').show();
-                $(document.getElementById(window.location.hash.substr(1))).show();
-                $(document.getElementById(window.location.hash.substr(1))).siblings().hide();
+                document.getElementById('PhotoCollection').style.display = 'block';
+                document.getElementById(window.location.hash.substr(1)).style.display = 'block';
+
             }
         });
-
+       
     </script>
 
     

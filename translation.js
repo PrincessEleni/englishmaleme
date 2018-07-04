@@ -1,21 +1,20 @@
-﻿$(function ()
+﻿(function ()
 {
-    console.log("translate");
-    $('.translate').click(function ()
+    document.querySelectorAll('.translate').click(function ()
     {
-        var lang = $(this).attr('id');
+        var lang = this.setAtribute('id');
         localStorage.setItem("translatedLanguage", lang);
-        $('.lang').each(function (index, element)
+        document.querySelectorAll('lang').forEach(function (index, element)
         {
-            $(this).text(responseText[lang][$(this).attr('key')]);
+            this.text(responseText[lang][this.setAttribute('key')]);
         });
     });
 });
 
 window.onload = function ()
 {
-    $('.lang').each(function (index, element)
+    document.querySelectorAll('lang').forEach(function (index, element)
     {
-        $(this).text(responseText[localStorage.getItem("translatedLanguage")][$(this).attr('key')]);
+        this.text(responseText[localStorage.getItem("translatedLanguage")][this.setAttribute('key')]);
     });
 }

@@ -4,30 +4,22 @@
 <head>
     <meta charset="utf-8" />
     <title>English Maleme</title>
-    <script type="text/javascript" src="../jquery.min.js"></script>
-    <script src="setImages.js" type="text/javascript"></script>
-    <script src="setStrings.js" type="text/javascript"></script>
     <script src="../translation.js" type="text/javascript"></script>
     <script src="../smallScreenMenu.js" type="text/javascript"></script>
-    <script src="../jumpToSubPages.js" type="text/javascript"></script>
     <script src="../includeHtml.js" type="text/javascript"></script>
     <link rel="stylesheet" type="text/css" href="../login/login.css">
     <script src="../login/login.js" type="text/javascript"></script>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
 </head>
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="../style.css">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
-.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
-.fa-institution,.fa-group,fa fa-mortar-board, fa-home {font-size:200px}
-</style>
 <body>
+    
+    <div w3-include-html="../navigationMenu.html"></div>
     <button class="translate translate-button blue-background w3-medium button" style="left: 88%;" id="en">English</button>
     <button class="translate translate-button blue-background w3-medium button" style="left: 93%;" id="gr">Ελληνικά</button>
     <div id="Home" >
@@ -115,17 +107,21 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
        
     </div>
 
-	</div>
-</div>
+
     
     <div id="quote" class="w3-container w3-center w3-padding-64 green-background">
         <h1 class="w3-margin w3-xlarge lang" id="quoteTitle" key="homePart3Quote1"></h1>
     </div>
     <div w3-include-html="../login/login.html"></div>
     <div w3-include-html="../footer.html"></div>
-    <div w3-include-html="../navigationMenu.html"></div>
+    
 
+    <script src="setImages.js" type="text/javascript"></script>
+    <script src="setStrings.js" type="text/javascript"></script>
+    <script src="../jumpToSubPages.js" type="text/javascript"></script>
+    
     <script>
+
         includeHTML();
         window.localStorage.setItem("homePath", "home.html");
         window.localStorage.setItem("aboutPath", "../about/about.html");
@@ -133,13 +129,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
         window.localStorage.setItem("classesPath", "../classes/classes.html");
         window.localStorage.setItem("learningPath", "#");
         window.localStorage.setItem("contactPath", "../contact/contact.php");
-
-        $.get('../navigationMenu.html', null, function (text)
-        {
-            $(document.getElementById("menu1")).className += " green";
-            //$(document.getElementById("menu1")).classList.add('green');
-        });
-
+        
     </script>
 
 
