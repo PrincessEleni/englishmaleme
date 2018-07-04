@@ -10,13 +10,13 @@
     <!-- Navbar -->
     <div class="w3-top">
         <div class="w3-bar blue-background w3-card w3-left-align w3-large">
-                <a href="../home/home.html" class="w3-bar-item button w3-hide-small w3-padding-large hover-green lang" style="text-decoration: none" key="menu1" id="menu1">
+                <a href="../home/home.html" class="w3-bar-item button w3-hide-small w3-padding-large hover-green lang" key="menu1" id="menu1">
                     Home
                     <i class="fa fa-home"></i>
                 </a>
                 <a href="../about/about.html" class="w3-bar-item button w3-hide-small w3-padding-large hover-green lang" key="menu2" id="menu2">About Us</a>
-                <div class="w3-dropdown-hover">
-                    <button class="button w3-theme w3-hide-small w3-padding-large hover-green lang">
+                <div class="w3-dropdown-hover hover-green">
+                    <button class="button w3-theme w3-hide-small w3-padding-large  lang">
                         <a href="../activities/activities.html" class="lang" key="menu3" id="menu3" style="text-decoration: none">
                             Activities
                             <i class="fa fa-caret-down"></i>
@@ -53,40 +53,6 @@
             <a href="#" class="w3-bar-item w3-button w3-padding-large">Contact</a>
         </div>
     </div>
-
-    <script>
-        /*
-        document.getElementById("menu1").innerHTML = window.localStorage.getItem("homePath");
-        document.getElementById("menu2").innerHTML = window.localStorage.getItem("aboutPath");
-        document.getElementById("menu3").innerHTML = window.localStorage.getItem("activitiesPath");
-        document.getElementById("menu4").innerHTML = window.localStorage.getItem("classesPath");
-        document.getElementById("menu5").innerHTML = window.localStorage.getItem("learningPath");
-        document.getElementById("menu6").innerHTML = window.localStorage.getItem("contactPath");
-        */
-        //classes
-        
-        window.onload = function ()
-        {
-            document.getElementById("menu1").classList.add(window.localStorage.getItem("homePathClass"));
-            console.log("homePathClass");
-        }
-        /*
-        window.onload = function ()
-        {
-            $(document.getElementById("menu1")).innerHTML = window.localStorage.getItem("homePath");
-            $(document.getElementById("menu2")).innerHTML = window.localStorage.getItem("aboutPath");
-            $(document.getElementById("menu3")).innerHTML = window.localStorage.getItem("activitiesPath");
-            $(document.getElementById("menu4")).innerHTML = window.localStorage.getItem("classesPath");
-            $(document.getElementById("menu5")).innerHTML = window.localStorage.getItem("learningPath");
-            $(document.getElementById("menu6")).innerHTML = window.localStorage.getItem("contactPath");
-
-            //document.getElementById(window.localStorage.getItem("coloured")).classList.add('green');
-            //document.getElementById("menu1").className += " green";
-        }
-        */
-
-
-    </script>
     
 </body>
 </html>
