@@ -20,8 +20,6 @@
 <body>
     
     <div w3-include-html="../navigationMenu.html"></div>
-    <button class="translate translate-button blue-background w3-medium button" style="left: 88%;" id="en">English</button>
-    <button class="translate translate-button blue-background w3-medium button" style="left: 93%;" id="gr">Ελληνικά</button>
     <div id="Home" >
         <!-- Header -->
         <header class="bgimg" style="padding:128px 16px">
@@ -38,10 +36,10 @@
         <div class="w3-row-padding green-background w3-padding-64 w3-container">
             <div class="w3-content">
                 <div class="w3-twothird blue-text">
-                    <h1><i id="title1" class="title lang" key="homePart1Title" ></i></h1>
-                    <h5 id="paragraph1" class="w3-padding-32 lang" key="homePart1Paragraph1"></h5>
-                    <p id="paragraph2" class="lang" key="homePart1Paragraph2"></p>
-                    <p id="paragraph3" class="lang" key="homePart1Paragraph3"></p>
+                    <h1><i id="homePart1Title" class="title lang" key="homePart1Title" ></i></h1>
+                    <h5 id="homePart1Paragraph1" class="w3-padding-32 lang" key="homePart1Paragraph1"></h5>
+                    <p id="homePart1Paragraph2" class="lang" key="homePart1Paragraph2"></p>
+                    <p id="homePart1Paragraph3" class="lang" key="homePart1Paragraph3"></p>
                 </div>
 
                 <div class="w3-third w3-center">
@@ -53,7 +51,7 @@
         <div class="w3-row-padding blue-background w3-padding-64 w3-container">
             <div class="w3-content">
                 <div class="w3-twothird w3-margin">
-                    <h1><i id="title2" class="lang" key="homePart2Title"></i></h1>
+                    <h1><i id="homePart2Title" class="lang" key="homePart2Title"></i></h1>
                 </div>
             </div>
                 <!--Images-->
@@ -61,22 +59,22 @@
                     <div class="w3-third">
                         <div id="english3" class="w3-card"></div>
                         <div class="w3-container w3-card green-background">
-                            <h5 id="subtitle1" class="lang" key="homePart2Subtitle1"></h5>
-                            <p id="box1" class="lang" key="homePart2Box1"></p>
+                            <h5 id="homePart2Subtitle1" class="lang" key="homePart2Subtitle1"></h5>
+                            <p id="homePart2Box1" class="lang" key="homePart2Box1"></p>
                         </div>
                     </div>
                     <div class="w3-third">
                         <div id="english1" class="w3-card"></div>
                         <div class="w3-container w3-card green-background">
-                            <h5 id="subtitle2" class="lang" key="homePart2Subtitle2"></h5>
-                            <p id="box2" class="lang" key="homePart2Box2"></p>
+                            <h5 id="homePart2Subtitle2" class="lang" key="homePart2Subtitle2"></h5>
+                            <p id="homePart2Box2" class="lang" key="homePart2Box2"></p>
                         </div>
                     </div>
                     <div class="w3-third">
                         <div id="english2" class="w3-card"></div>
                         <div class="w3-container w3-card green-background">
-                            <h5 id="subtitle3" class="lang" key="homePart2Subtitle3"></h5>
-                            <p id="box3" class="lang" key="homePart2Box3"></p>
+                            <h5 id="homePart2Subtitle3" class="lang" key="homePart2Subtitle3"></h5>
+                            <p id="homePart2Box3" class="lang" key="homePart2Box3"></p>
                         </div>
                     </div>
                 </div>
@@ -84,22 +82,22 @@
                     <div class="w3-third">
                         <div id="english4" class="w3-card"></div>
                         <div class="w3-container w3-card green-background">
-                            <h5 id="subtitle4" class="lang" key="homePart2Subtitle4"></h5>
-                            <p id="box4" class="lang" key="homePart2Box4"></p>
+                            <h5 id="homePart2Subtitle4" class="lang" key="homePart2Subtitle4"></h5>
+                            <p id="homePart2Box4" class="lang" key="homePart2Box4"></p>
                         </div>
                     </div>
                     <div class="w3-third">
                         <div id="english5" class="w3-card"></div>
                         <div class="w3-container w3-card green-background">
-                            <h5 id="subtitle5" class="lang" key="homePart2Subtitle5"></h5>
-                            <p id="box5" class="lang" key="homePart2Box5"></p>
+                            <h5 id="homePart2Subtitle5" class="lang" key="homePart2Subtitle5"></h5>
+                            <p id="homePart2Box5" class="lang" key="homePart2Box5"></p>
                         </div>
                     </div>
                     <div class="w3-third">
                         <div id="english6" class="w3-card"></div>
                         <div class="w3-container w3-card green-background">
-                            <h5 id="subtitle6" class="lang" key="homePart2Subtitle6"></h5>
-                            <p id="box6" class="lang" key="homePart2Box6"></p>
+                            <h5 id="homePart2Subtitle6" class="lang" key="homePart2Subtitle6"></h5>
+                            <p id="homePart2Box6" class="lang" key="homePart2Box6"></p>
                         </div>
                     </div>
                 </div>
@@ -110,7 +108,7 @@
 
     
     <div id="quote" class="w3-container w3-center w3-padding-64 green-background">
-        <h1 class="w3-margin w3-xlarge lang" id="quoteTitle" key="homePart3Quote1"></h1>
+        <h1 class="w3-margin w3-xlarge lang" id="homePart3Quote1" key="homePart3Quote1"></h1>
     </div>
     <div w3-include-html="../login/login.html"></div>
     <div w3-include-html="../footer.html"></div>
@@ -130,6 +128,10 @@
         window.localStorage.setItem("learningPath", "#");
         window.localStorage.setItem("contactPath", "../contact/contact.php");
         
+        function myTranslateFunc2()
+        {
+            console.log("den kserw ti kanw2");
+        }
     </script>
 
 

@@ -6,6 +6,7 @@
     <title>English Maleme Navigation Menu Bar</title>
     <script src="translation.js" type="text/javascript"></script>
 </head>
+
 <body>
     <!-- Navbar -->
     <div class="w3-top">
@@ -16,21 +17,21 @@
                 </a>
                 <a href="../about/about.html" class="w3-bar-item button w3-hide-small w3-padding-large hover-green lang" key="menu2" id="menu2">About Us</a>
                 <div class="w3-dropdown-hover hover-green">
-                    <button class="button w3-theme w3-hide-small w3-padding-large  lang">
+                    <button class="button w3-theme w3-hide-small w3-padding-large">
                         <a href="../activities/activities.html" class="lang" key="menu3" id="menu3" style="text-decoration: none">
                             Activities
                             <i class="fa fa-caret-down"></i>
                         </a>
                     </button>
                     <div class="w3-dropdown-content w3-card-4 w3-bar-block dropdown-border">
-                        <a href="../activities/activities.html#TreasureHunt" onclick="myAccFunc('TreasureHunt')" class="w3-bar-item dropdown-button">Treasure Hunt</a>
-                        <a href="../activities/activities.html#EasterEggHunt" onclick="myAccFunc('EasterEggHunt')" class="w3-bar-item dropdown-button">Easter Egg</a>
-                        <a href="../activities/activities.html#Halloween" onclick="myAccFunc('Halloween')" class="w3-bar-item dropdown-button">Halloween</a>
-                        <a href="../activities/activities.html#Christmas" onclick="myAccFunc('Christmas')" class="w3-bar-item dropdown-button">Christmas Theatricals & Christmas Carols</a>
-                        <a href="../activities/activities.html#Tsiknopempti" onclick="myAccFunc('Tsiknopempti')" class="w3-bar-item dropdown-button">Tsiknopempti</a>
-                        <a href="../activities/activities.html#MovieNights" onclick="myAccFunc('MovieNights')" class="w3-bar-item dropdown-button">Movie Nights</a>
-                        <a href="../activities/activities.html#Interviews" onclick="myAccFunc('Interviews')" class="w3-bar-item dropdown-button">Interviews</a>
-                        <a href="../activities/activities.html#StarCompetition" onclick="myAccFunc('StarCompetition')" class="w3-bar-item dropdown-button">Star Competition</a>
+                        <a href="../activities/activities.html#TreasureHunt" onclick="myAccFunc('TreasureHunt')" class="w3-bar-item dropdown-button lang" key="dropdown1" id="dropdown1">Treasure Hunt</a>
+                        <a href="../activities/activities.html#EasterEggHunt" onclick="myAccFunc('EasterEggHunt')" class="w3-bar-item dropdown-button lang" key="dropdown2" id="dropdown2">Easter Egg</a>
+                        <a href="../activities/activities.html#Halloween" onclick="myAccFunc('Halloween')" class="w3-bar-item dropdown-button lang" key="dropdown3" id="dropdown3">Halloween</a>
+                        <a href="../activities/activities.html#Christmas" onclick="myAccFunc('Christmas')" class="w3-bar-item dropdown-button lang" key="dropdown4" id="dropdown4">Christmas Theatricals & Christmas Carols</a>
+                        <a href="../activities/activities.html#Tsiknopempti" onclick="myAccFunc('Tsiknopempti')" class="w3-bar-item dropdown-button lang" key="dropdown5" id="dropdown5">Tsiknopempti</a>
+                        <a href="../activities/activities.html#MovieNights" onclick="myAccFunc('MovieNights')" class="w3-bar-item dropdown-button lang" key="dropdown6" id="dropdown6">Movie Nights</a>
+                        <a href="../activities/activities.html#Interviews" onclick="myAccFunc('Interviews')" class="w3-bar-item dropdown-button lang" key="dropdown7" id="dropdown7">Interviews</a>
+                        <a href="../activities/activities.html#StarCompetition" onclick="myAccFunc('StarCompetition')" class="w3-bar-item dropdown-button lang" key="dropdown8" id="dropdown8">Star Competition</a>
                     </div>
                 </div>
                 <a href="../classes/classes.html" class="w3-bar-item button w3-hide-small w3-padding-large hover-green lang" key="menu4" id="menu4">
@@ -38,7 +39,10 @@
                 </a>
                 <a href="#" class="w3-bar-item button w3-hide-small w3-padding-large hover-green lang" key="menu5" id="menu5">Online Learning</a>
                 <a href="../contact/contact.php" class="w3-bar-item button w3-hide-small w3-padding-large hover-green lang" key="menu6" id="menu6">Contact</a>
-
+            <div>
+                <button onclick="myTranslateFunc(en)" class="translate translate-button blue-background w3-medium button" style="right: 90px;" id="en">English</button>
+                <button onclick="myTranslateFunc(gr)" class="translate translate-button blue-background w3-medium button" style="right: 10px;" id="gr">Ελληνικά</button>
+            </div>
 </div>
 
         <!-- Navbar on small screens -->
@@ -54,5 +58,6 @@
         </div>
     </div>
     
+
 </body>
 </html>

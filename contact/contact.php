@@ -85,9 +85,6 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <body>
-<button class="translate translate-button blue-background w3-medium button" style="left: 88%;" id="en">English</button>
-    <button class="translate translate-button blue-background w3-medium button" style="left: 93%;" id="gr">Ελληνικά</button>
-    
     <div id="Contact Us">
 
         <div class="row green-background">

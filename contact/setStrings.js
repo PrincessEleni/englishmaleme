@@ -10,16 +10,16 @@ xhttpText.onreadystatechange = function ()
         responseText = JSON.parse(xhttpText.responseText); //to make them objects to use them because they are strings
 
         myresponseText = responseText.en;
-        document.getElementById('title').innerHTML = myresponseText.title;
-        document.getElementById('paragraph').innerHTML = myresponseText.paragraph;
-        document.getElementById('address').innerHTML = myresponseText.address;
-        document.getElementById('email').innerHTML = myresponseText.email;
-        document.getElementById('phone').innerHTML = myresponseText.phone;
-        document.getElementById('skype').innerHTML = myresponseText.skype;
-        document.getElementById('opening').innerHTML = myresponseText.opening;
-        document.getElementById('hours1').innerHTML = myresponseText.hours1;
-        document.getElementById('hours2').innerHTML = myresponseText.hours2;
-        document.getElementById('hours3').innerHTML = myresponseText.hours3;
+        document.getElementById('title').textContent = myresponseText.title;
+        document.getElementById('paragraph').textContent = myresponseText.paragraph;
+        document.getElementById('address').textContent = myresponseText.address;
+        document.getElementById('email').textContent = myresponseText.email;
+        document.getElementById('phone').textContent = myresponseText.phone;
+        document.getElementById('skype').textContent = myresponseText.skype;
+        document.getElementById('opening').textContent = myresponseText.opening;
+        document.getElementById('hours1').textContent = myresponseText.hours1;
+        document.getElementById('hours2').textContent = myresponseText.hours2;
+        document.getElementById('hours3').textContent = myresponseText.hours3;
 
     }
 }
